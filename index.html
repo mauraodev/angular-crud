@@ -1,0 +1,21 @@
+<html lang="pt-br" ng-app="angular-crud">
+<head>
+    <meta charset="utf-8">
+    <base href="/">
+    <meta name="viewport" content="width=device-width">
+    <title>Angular Crud</title>
+    <script src="/js/lib/angular.min.js"></script>
+    <script src="/bower_components/angular-route/angular-route.js"></script>
+    <script src="/js/main.js"></script>
+    <script src="/js/services/commentService.js"></script>
+    <script src="/js/controllers/IndexController.js"></script>
+</head>
+<body ng-controller="IndexController">
+    <form name="form" ng-submit="enviar()">
+        <label>Nome</label>
+        <input type="text" name="nome" ng-model="cadastro.nome">
+        <p> Meu nome é {{cadastro.nome}}</p>
+        <button type="submit">Enviar</button>
+    </form>
+</body>
+</html>
